@@ -1,0 +1,35 @@
+###  install extension 'humao.rest-client' to let this file work as http-client.
+GET http://localhost:8090/api/users/ HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0ZGVlcGFrMjJAZ21haWwuY29tIiwiaWF0IjoxNTY4MjMwNDY1fQ.UoMwA3hwuz0ymLAB17DnMfLYdcvtprhdxyezaWLYEl0
+
+
+
+###
+GET http://localhost:8090/api/users/enabled HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0ZGVlcGFrMjJAZ21haWwuY29tIiwiaWF0IjoxNTY4MjMwNDY1fQ.UoMwA3hwuz0ymLAB17DnMfLYdcvtprhdxyezaWLYEl0
+
+
+
+###
+GET http://localhost:8090/api/users/disabled HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0ZGVlcGFrMjJAZ21haWwuY29tIiwiaWF0IjoxNTY4MjMwNDY1fQ.UoMwA3hwuz0ymLAB17DnMfLYdcvtprhdxyezaWLYEl0
+
+
+
+###
+POST http://localhost:8090/api/users HTTP/1.1
+content-type: application/json
+
+{"name":"Deepak Sharma", "password":"Password", "email":"stdeepak22@gmail.com"}
+
+
+
+###
+POST http://localhost:8090/api/users/login HTTP/1.1
+content-type: application/json
+
+{"email":"stdeepak22@gmail.com", "password":"Password"}
+
+
+
+###
